@@ -1,2 +1,2 @@
-# cs232
-Sample app for 232: Ruby on Rails, Fall 2016
+# rails-tutorial
+Rails sample app, Fall 2016
