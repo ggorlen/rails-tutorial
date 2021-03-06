@@ -1,0 +1,81 @@
+/*
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #111;
+$secondary-color: #333;
+$l-color: #c33051;
+
+html {
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  border: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+	background: #fefefe;
+}
+
+h1 {
+	color: $secondary-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(14px); 
+	border: 2px solid $l-color;
+	padding: 25px 55px 25px 55px;
+	background: #fefefe;
+}
+*/
+
+// Place all the styles related to the Ccsf_Rails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Our SCSS
+
+// Variables
+/*
+@import url(https://hills.ccsf.edu/~dputnam/assets/stylesheets/base.css);
+@import url(https://hills.ccsf.edu/~dputnam/assets/stylesheets/et-book.min.css);
+*/
+$background-color: #fffff8;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "et-book", Baskerville, Georgia, "Times New Roman", serif;
+$color: #222222;
+$link-color: #0000aa;
+
+// Using variables and nesting of rules makes writing CSS simpler. 
+html {background-color: $background-color;}
+body {padding:3rem;border:none;background-color:$background-color;color:$color; margin-top:50px;}
+.welcome {
+  font-family:$sans-serif;
+  margin: 50px auto;
+  color: $color;
+  h1, h2,h3,h4,h5 {
+      font-family: $sans-serif;
+  }
+  p {
+    color: $color;
+    font-family: $sans-serif;
+    li {
+      font-family: $sans-serif;
+      a {
+        color: darken($link-color, 20%);
+      }
+    }
+  }
+}
+

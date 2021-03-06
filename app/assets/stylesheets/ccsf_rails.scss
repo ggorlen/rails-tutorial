@@ -1,0 +1,40 @@
+// Place all the styles related to the ccsf_rails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #111;
+$secondary-color: #333;
+$l-color: #c33051;
+
+html {
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  border: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+	background: #fefefe;
+}
+
+h1 {
+	color: $secondary-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(14px); 
+	border: 2px solid $l-color;
+	padding: 25px 55px 25px 55px;
+	background: #fefefe;
+}

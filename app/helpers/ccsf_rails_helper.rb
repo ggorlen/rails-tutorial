@@ -1,0 +1,2 @@
+module CcsfRailsHelper
+end
